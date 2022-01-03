@@ -30,6 +30,17 @@ git push heroku master
 
 - Run the spring boot app using `./mvnw spring-boot:run -Dspring-boot.run.arguments=--dataDir=/opt/tmp/data`
 - Login to heroku `heroku login`
+- Add this entry to the pom.xml
+
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-test</artifactId>
+	<scope>test</scope>
+</dependency>
+```
+
+- Run ./mvnw package to run test cases.
 
 ```
 git init
