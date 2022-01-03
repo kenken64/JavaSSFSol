@@ -29,7 +29,6 @@ git push heroku master
 ## Workshop 3
 
 - Run the spring boot app using `./mvnw spring-boot:run -Dspring-boot.run.arguments=--dataDir=/opt/tmp/data`
-- Login to heroku `heroku login`
 - Add this entry to the pom.xml
 
 ```
@@ -41,11 +40,3 @@ git push heroku master
 ```
 
 - Run ./mvnw package to run test cases.
-
-```
-git init
-git add .
-git commit -m "first commit"
-heroku create
-git push heroku master
-```
