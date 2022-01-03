@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>Random Number</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <ul th:each="numVal : ${numbersResult}">
+      <li th:text="${numVal}"></li>
+      <img th:src="@{${'/images/' + numVal}}" width="120" height="120" />
+    </ul>
+  </body>
+</html>
