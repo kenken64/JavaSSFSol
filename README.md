@@ -41,17 +41,32 @@ git push heroku master
 
 - Run ./mvnw package to run test cases.
 
-## Workshop 3
+## Workshop 4
 
 - Run the spring boot app using `./mvnw spring-boot:run`
-- Add this entry to the pom.xml
+- Add this entry to the pom.xml for redis data persistency
 
 ```
 <dependency>
 	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-test</artifactId>
-	<scope>test</scope>
+	<artifactId>spring-boot-starter-cache</artifactId>
+</dependency>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>
+<dependency>
+	<groupId>redis.clients</groupId>
+	<artifactId>jedis</artifactId>
 </dependency>
 ```
 
-- Run ./mvnw package to run test cases.
+- Run ./mvnw package to run test cases
+- Connect to the redis cloud service
+
+```
+$ redis-cli -h redis-19763.c252.ap-southeast-1-1.ec2.cloud.redislabs.com -p 19763 -a dEnC2q43NOxxghtlcWxI56n3aS8lRZw1
+
+$ redis-19763.c252.ap-southeast-1-1.ec2.cloud.redislabs.com:19763> keys *
+
+```
