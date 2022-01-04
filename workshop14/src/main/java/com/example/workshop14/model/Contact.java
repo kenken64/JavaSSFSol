@@ -1,9 +1,10 @@
-package com.example.workshop13.model;
+package com.example.workshop14.model;
 
 import java.io.Serializable;
 
 public class Contact implements Serializable{
     private static final long serialVersionUID = 1L;
+    private String id;
     private String name;
     private String email;
     private int phoneNumber;
@@ -12,7 +13,8 @@ public class Contact implements Serializable{
 
     }
     
-    public Contact(String name, String email, int phoneNumber) {
+    public Contact(String id, String name, String email, int phoneNumber) {
+        this.id = id;
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -40,5 +42,13 @@ public class Contact implements Serializable{
 
     public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getId() {
+        return this.id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

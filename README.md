@@ -40,3 +40,18 @@ git push heroku master
 ```
 
 - Run ./mvnw package to run test cases.
+
+## Workshop 3
+
+- Run the spring boot app using `./mvnw spring-boot:run`
+- Add this entry to the pom.xml
+
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-test</artifactId>
+	<scope>test</scope>
+</dependency>
+```
+
+- Run ./mvnw package to run test cases.
