@@ -1,4 +1,4 @@
-## Workshop 1
+## Workshop 11
 
 - Run the spring boot app using `./mvnw spring-boot:run`
 - `./mvnw spring-boot:run -Dspring-boot.run.arguments=--port=8081`
@@ -13,7 +13,7 @@ heroku create
 git push heroku master
 ```
 
-## Workshop 2
+## Workshop 12
 
 - Run the spring boot app using `./mvnw spring-boot:run`
 - Login to heroku `heroku login`
@@ -26,7 +26,7 @@ heroku create
 git push heroku master
 ```
 
-## Workshop 3
+## Workshop 13
 
 - Run the spring boot app using `./mvnw spring-boot:run -Dspring-boot.run.arguments=--dataDir=/opt/tmp/data`
 - Add this entry to the pom.xml
@@ -41,7 +41,7 @@ git push heroku master
 
 - Run ./mvnw package to run test cases.
 
-## Workshop 4
+## Workshop 14
 
 - Run the spring boot app using `./mvnw spring-boot:run`
 - Add this entry to the pom.xml for redis data persistency
